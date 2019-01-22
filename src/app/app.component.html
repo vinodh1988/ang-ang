@@ -1,0 +1,14 @@
+<h1>
+  Angular is Working....!!!!! title is {{title}}
+</h1>
+<hr>
+<app-countries [clist]="countries"></app-countries>
+<hr>
+<!--
+<app-box  [itemtype]="types[0]" [itemvalues]="items[0]"></app-box>
+<app-box  [itemtype]="types[1]" [itemvalues]="items[1]"></app-box>
+<app-box  [itemtype]="types[2]" [itemvalues]="items[2]"></app-box>
+-->
+
+<app-box *ngFor="let x of [0,1,2]" [itemtype]="types[x]" [itemvalues]="items[x]">
+</app-box>
